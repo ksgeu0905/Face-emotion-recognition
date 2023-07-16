@@ -7,8 +7,6 @@ import numpy as np
 # import tensorflow as tf
 app=Flask(__name__)
 face_detect = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_detect = cv2.CascadeClassifier('haarcascade_eye.xml')
-
 my_model = tf.keras.models.load_model('model.h5')
 class_labels = ['angry','happy','neutral','sad','surprise']
 camera=cv2.VideoCapture(0)
