@@ -1,5 +1,4 @@
 from flask import Flask,render_template,Response,request
-from deepface import DeepFace
 import tensorflow as tf
 from tensorflow import keras
 import cv2
